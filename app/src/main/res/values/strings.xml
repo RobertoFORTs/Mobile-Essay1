@@ -1,6 +1,23 @@
 <resources>
-    <string name="app_name">Mobile-Essay1</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+<string name="app_name">Mobile-Essay1</string>
+<string name="title_home">Home</string>
+<string name="title_dashboard">Músicas</string>
+<string name="title_notifications">Notifications</string>
+<string name="next">Next</string>
+<string name="previous">Previous</string>
+<string name="third">Third</string>
+
+<string-array name="sons">
+    <item>Escolha uma música: </item>
+    <item>Música 1</item>
+    <item>Música 2</item>
+    <item>Música 3</item>
+    <item>Música 4</item>
+</string-array>
+
+<string name="lorem_ipsum">
+        Lorem ipsum
+    </string>
+<!-- TODO: Remove or change this placeholder text -->
+<string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -5,6 +5,14 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/navigation_home">
 
+    <action
+        android:id="@+id/action_homeFragment_to_dashboardFragment"
+        app:destination="@id/navigation_dashboard" />
+
+    <action
+        android:id="@+id/action_dashboardFragment_to_action_homeFragment"
+        app:destination="@id/navigation_home" />
+
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.mobile_essay1.ui.home.HomeFragment"
