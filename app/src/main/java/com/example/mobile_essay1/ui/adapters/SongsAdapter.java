@@ -16,11 +16,6 @@ public class SongsAdapter extends BaseAdapter {
     private Context mContext;
     private List<String> mSongNames;
 
-    public SongsAdapter(Context context, List<String> songNames) {
-        mContext = context;
-        mSongNames = songNames;
-    }
-
     @Override
     public int getCount() {
         return mSongNames.size();

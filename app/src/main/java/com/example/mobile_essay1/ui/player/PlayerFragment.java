@@ -1,4 +1,4 @@
-package com.example.mobile_essay1.ui.notifications;
+package com.example.mobile_essay1.ui.player;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,21 +10,21 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.mobile_essay1.databinding.FragmentNotificationsBinding;
+import com.example.mobile_essay1.databinding.FragmentPlayerBinding;
 
-public class NotificationsFragment extends Fragment {
+public class PlayerFragment extends Fragment {
 
-    private FragmentNotificationsBinding binding;
+    private FragmentPlayerBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        NotificationsViewModel notificationsViewModel =
-                new ViewModelProvider(this).get(NotificationsViewModel.class);
+        PlayerViewModel notificationsViewModel =
+                new ViewModelProvider(this).get(PlayerViewModel.class);
 
-        binding = FragmentNotificationsBinding.inflate(inflater, container, false);
+        binding = FragmentPlayerBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textNotifications;
+        final TextView textView = binding.textPlayer;
         notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
