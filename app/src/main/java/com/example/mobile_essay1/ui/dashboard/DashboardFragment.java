@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.mobile_essay1.R;
@@ -51,8 +52,9 @@ public class DashboardFragment extends Fragment {
                 // Faça o que precisar com o nome da música selecionada
                 Bundle bundle = new Bundle();
                 bundle.putString("selected_music", selected_music);
-                NavHostFragment.findNavController(DashboardFragment.this)
-                        .navigate(R.id.action_navigation_dashboard_to_navigation_player, bundle);
+                NavController nav = NavHostFragment.findNavController(DashboardFragment.this);
+                nav.popBackStack();
+                nav.navigate(R.id.action_navigation_dashboard_to_navigation_player, bundle);
             }
         });
 

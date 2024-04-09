@@ -27,8 +27,9 @@ public class HomeFragment extends Fragment {
         binding.btnIniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(HomeFragment.this)
-                        .navigate(R.id.action_homeFragment_to_dashboardFragment);
+                NavController navController = NavHostFragment.findNavController(HomeFragment.this);
+                navController.popBackStack();
+                navController.navigate(R.id.action_homeFragment_to_dashboardFragment);
             }
         });
 
