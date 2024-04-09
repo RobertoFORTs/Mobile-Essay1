@@ -33,6 +33,11 @@ public class PlayerFragment extends Fragment {
         PlayerViewModel notificationsViewModel =
                 new ViewModelProvider(this).get(PlayerViewModel.class);
 
+        if (getArguments() != null) {
+            String selected_music = getArguments().getString("selected_music");
+            System.out.println(selected_music);
+        }
+
         binding = FragmentPlayerBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 

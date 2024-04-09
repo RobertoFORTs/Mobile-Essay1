@@ -8,11 +8,11 @@
 <string name="third">Third</string>
 
 <string-array name="sons">
-    <item>Escolha uma música: </item>
-    <item>Música 1</item>
-    <item>Música 2</item>
-    <item>Música 3</item>
-    <item>Música 4</item>
+    <item>Escolha um estilo </item>
+    <item>Relax</item>
+    <item>Pop</item>
+    <item>Rock</item>
+    <item>Estilo 4</item>
 </string-array>
 
 <string name="lorem_ipsum">

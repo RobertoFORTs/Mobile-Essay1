@@ -18,9 +18,6 @@
         android:name="com.example.mobile_essay1.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_navigation_home_to_navigation_dashboard"
-            app:destination="@id/navigation_dashboard" />
     </fragment>
 
     <fragment
@@ -28,6 +25,9 @@
         android:name="com.example.mobile_essay1.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
+    <action
+        android:id="@+id/action_navigation_dashboard_to_navigation_player"
+        app:destination="@id/navigation_player" />
 
     <fragment
         android:id="@+id/navigation_player"
