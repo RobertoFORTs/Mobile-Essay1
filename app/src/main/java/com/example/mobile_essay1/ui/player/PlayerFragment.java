@@ -41,6 +41,10 @@ public class PlayerFragment extends Fragment {
         tvDuration = root.findViewById(R.id.tvTimeEnd);
         seekbarTime = root.findViewById(R.id.seekBarTime);
         btnPlay = root.findViewById(R.id.btnPlay);
+        if (musicPlayer == null){
+            seekbarTime.setProgress(0);
+            tvDuration.setText("--");
+        }
         String duration = "00:00";
         if (getArguments() != null) {
             selected_music = getArguments().getString("selected_music");
@@ -154,7 +158,9 @@ public class PlayerFragment extends Fragment {
 
         }
         tvDuration.setText(duration);
-        seekbarTime.setMax(musicPlayer.getDuration());
+        if (musicPlayer!=null){
+            seekbarTime.setMax(musicPlayer.getDuration());
+        }
         seekbarTime.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
             @Override
