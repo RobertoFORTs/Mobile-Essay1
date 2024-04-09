@@ -2,7 +2,6 @@ package com.example.mobile_essay1;
 
 import android.os.Bundle;
 
-import com.example.mobile_essay1.ui.adapters.SongsAdapter;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;

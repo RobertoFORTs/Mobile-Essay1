@@ -21,7 +21,6 @@ import com.example.mobile_essay1.databinding.FragmentDashboardBinding;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.example.mobile_essay1.ui.adapters.*;
 import com.example.mobile_essay1.ui.home.HomeFragment;
 
 public class DashboardFragment extends Fragment {
