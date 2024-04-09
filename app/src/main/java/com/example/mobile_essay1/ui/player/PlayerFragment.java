@@ -44,114 +44,158 @@ public class PlayerFragment extends Fragment {
         if (musicPlayer == null){
             seekbarTime.setProgress(0);
             tvDuration.setText("--");
+
         }
         String duration = "00:00";
         if (getArguments() != null) {
             selected_music = getArguments().getString("selected_music");
             System.out.println(selected_music);
         }
+
         switch (selected_music){
             case "musica0":
                 System.out.println(selected_music);
-                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica1);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica0);
                 musicPlayer.start();
                 duration = millisecondsToString( musicPlayer.getDuration());
                 break;
 
             case "musica1":
                 System.out.println(selected_music);
-                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica2);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica1);
                 musicPlayer.start();
                 duration = millisecondsToString( musicPlayer.getDuration());
                 break;
 
             case "musica2":
                 System.out.println(selected_music);
-                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica3);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica2);
                 musicPlayer.start();
                 duration = millisecondsToString( musicPlayer.getDuration());
                 break;
             case "musica3":
                 System.out.println(selected_music);
-                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica4);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica3);
                 musicPlayer.start();
                 duration = millisecondsToString( musicPlayer.getDuration());
                 break;
             case "musica4":
                 System.out.println(selected_music);
-                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica1);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica4);
                 musicPlayer.start();
                 duration = millisecondsToString( musicPlayer.getDuration());
                 break;
             case "musica5":
                 System.out.println(selected_music);
-                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica1);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica5);
                 musicPlayer.start();
                 duration = millisecondsToString( musicPlayer.getDuration());
                 break;
             case "musica6":
                 System.out.println(selected_music);
-                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica1);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica6);
                 musicPlayer.start();
                 duration = millisecondsToString( musicPlayer.getDuration());
                 break;
             case "musica7":
                 System.out.println(selected_music);
-                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica1);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica7);
                 musicPlayer.start();
                 duration = millisecondsToString( musicPlayer.getDuration());
                 break;
             case "musica8":
                 System.out.println(selected_music);
-                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica1);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica8);
+                musicPlayer.start();
+                duration = millisecondsToString( musicPlayer.getDuration());
+                break;
+            case "musica9":
+                System.out.println(selected_music);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica9);
                 musicPlayer.start();
                 duration = millisecondsToString( musicPlayer.getDuration());
                 break;
             case "musica10":
                 System.out.println(selected_music);
-                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica1);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica10);
                 musicPlayer.start();
                 duration = millisecondsToString( musicPlayer.getDuration());
                 break;
             case "musica11":
                 System.out.println(selected_music);
-                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica1);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica11);
                 musicPlayer.start();
                 duration = millisecondsToString( musicPlayer.getDuration());
                 break;
             case "musica12":
                 System.out.println(selected_music);
-                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica1);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica12);
                 musicPlayer.start();
                 duration = millisecondsToString( musicPlayer.getDuration());
                 break;
             case "musica13":
                 System.out.println(selected_music);
-                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica1);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica13);
                 musicPlayer.start();
                 duration = millisecondsToString( musicPlayer.getDuration());
                 break;
             case "musica14":
                 System.out.println(selected_music);
-                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica1);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica14);
+                musicPlayer.start();
+                duration = millisecondsToString( musicPlayer.getDuration());
+                break;
+            case "musica15":
+                System.out.println(selected_music);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica15);
                 musicPlayer.start();
                 duration = millisecondsToString( musicPlayer.getDuration());
                 break;
             case "musica16":
                 System.out.println(selected_music);
-                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica1);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica16);
                 musicPlayer.start();
                 duration = millisecondsToString( musicPlayer.getDuration());
                 break;
             case "musica17":
                 System.out.println(selected_music);
-                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica1);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica17);
                 musicPlayer.start();
                 duration = millisecondsToString( musicPlayer.getDuration());
                 break;
             case "musica18":
                 System.out.println(selected_music);
-                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica1);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica18);
+                musicPlayer.start();
+                duration = millisecondsToString( musicPlayer.getDuration());
+                break;
+            case "musica19":
+                System.out.println(selected_music);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica19);
+                musicPlayer.start();
+                duration = millisecondsToString( musicPlayer.getDuration());
+                break;
+            case "musica20":
+                System.out.println(selected_music);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica20);
+                musicPlayer.start();
+                duration = millisecondsToString( musicPlayer.getDuration());
+                break;
+            case "musica21":
+                System.out.println(selected_music);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica21);
+                musicPlayer.start();
+                duration = millisecondsToString( musicPlayer.getDuration());
+                break;
+            case "musica22":
+                System.out.println(selected_music);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica22);
+                musicPlayer.start();
+                duration = millisecondsToString( musicPlayer.getDuration());
+                break;
+            case "musica23":
+                System.out.println(selected_music);
+                musicPlayer = MediaPlayer.create(getContext(), R.raw.musica23);
                 musicPlayer.start();
                 duration = millisecondsToString( musicPlayer.getDuration());
                 break;

@@ -28,7 +28,7 @@ public class DashboardFragment extends Fragment {
     private String[] musicNamesPop = {"musica6", "musica7", "musica8", "musica9", "musica10", "musica11"};
 
     private String[] musicNamesRock = {"musica12", "musica13", "musica14", "musica15", "musica16", "musica17"};
-    private String[] musicNamesEstilo4 = {"musica18", "musica19", "musica20", "musica21", "musica22", "musica23"};
+    private String[] musicNamesBrasileira = {"musica18", "musica19", "musica20", "musica21", "musica22", "musica23"};
 
     @Override
     public View onCreateView(
@@ -86,13 +86,13 @@ public class DashboardFragment extends Fragment {
                         break;
                     case 3:
                         musicNames = musicNamesRock;
-                        newList = new int[]{R.drawable.sample_12, R.drawable.sample_13, R.drawable.sample_14,
+                        newList = new int[]{R.drawable.sample_12, R.drawable.sample_14, R.drawable.sample_15,
                                 R.drawable.sample_15, R.drawable.sample_16, R.drawable.sample_17};
                         break;
                     case 4:
-                        musicNames = musicNamesEstilo4;
-                        newList = new int[]{R.drawable.sample_12, R.drawable.sample_13, R.drawable.sample_14,
-                                R.drawable.sample_15, R.drawable.sample_16, R.drawable.sample_17};
+                        musicNames = musicNamesBrasileira;
+                        newList = new int[]{R.drawable.sample_18, R.drawable.sample_19, R.drawable.sample_20,
+                                R.drawable.sample_21, R.drawable.sample_22, R.drawable.sample_23};
                         break;
                     default:
                         musicNames = musicNamesRelax;
