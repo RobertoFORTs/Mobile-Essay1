@@ -41,6 +41,7 @@ public class PlayerFragment extends Fragment {
         tvDuration = root.findViewById(R.id.tvTimeEnd);
         seekbarTime = root.findViewById(R.id.seekBarTime);
         btnPlay = root.findViewById(R.id.btnPlay);
+        btnPlay.setBackgroundResource(R.drawable.ic_pause);
         if (musicPlayer == null){
             seekbarTime.setProgress(0);
             tvDuration.setText("--");
@@ -237,14 +238,15 @@ public class PlayerFragment extends Fragment {
                             final double position = (100.0/duration) * current;
                             final String elapsedTime = millisecondsToString((int)current);
 
-                            requireActivity().runOnUiThread(new Runnable() {
-                                @Override
-                                public void run() {
-                                    tvTime.setText(elapsedTime);
-                                    seekbarTime.setProgress((int) current);
-                                }
-                            });
-
+                            if (isAdded() && getActivity() != null) {
+                                requireActivity().runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        tvTime.setText(elapsedTime);
+                                        seekbarTime.setProgress((int) current);
+                                    }
+                                });
+                            }
                             Thread.sleep(1000);
                         }catch(InterruptedException e) {
 
