@@ -23,7 +23,7 @@
         android:layout_marginTop="38dp"
         android:textSize="20sp"
         android:gravity="center_vertical"
-        android:textColor="#FF000000"
+        android:textColor="#FFFFFF"
         android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/image1"
         app:layout_constraintTop_toTopOf="parent" />

@@ -86,7 +86,7 @@ public class DashboardFragment extends Fragment {
                         break;
                     case 3:
                         musicNames = musicNamesRock;
-                        newList = new int[]{R.drawable.sample_12, R.drawable.sample_14, R.drawable.sample_15,
+                        newList = new int[]{R.drawable.sample_12, R.drawable.sample_13, R.drawable.sample_14,
                                 R.drawable.sample_15, R.drawable.sample_16, R.drawable.sample_17};
                         break;
                     case 4:
