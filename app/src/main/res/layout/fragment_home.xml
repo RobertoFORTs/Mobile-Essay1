@@ -8,20 +8,22 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/gradient_background">
+        android:background="@drawable/gradient_background"
+        tools:layout_editor_absoluteX="-73dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/div_container"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_width="275dp"
+            android:layout_height="280dp"
             android:background="@drawable/rounded_background"
             android:padding="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintHorizontal_bias="0.51"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.498">
+            app:layout_constraintTop_toBottomOf="@+id/list1"
+            app:layout_constraintVertical_bias="0.0">
 
             <Button
                 android:id="@+id/btn_iniciar"
@@ -38,13 +40,38 @@
                 android:id="@+id/textHome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
-                android:layout_marginTop="104dp"
+                android:layout_marginTop="68dp"
+                android:gravity="center"
                 android:text="Clique aqui para começar sua Experiência!"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteX="-1dp" />
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ListView
+            android:id="@+id/list1"
+            android:layout_width="309dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="15dp"
+            android:divider="#FFECECEC"
+            android:dividerHeight="2sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:text="CATEGORIAS:"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
